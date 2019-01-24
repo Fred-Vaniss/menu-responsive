@@ -1,7 +1,7 @@
-// var opened = false
+var opened = false
+var menu = document.getElementsByTagName('nav')[0]
 document.getElementById("burger").addEventListener('click', function(){
-    var menu = document.getElementsByTagName('nav')[0]
-    var opened = menu.style.display
+    opened = menu.style.display
 
     console.log(opened)
 
@@ -12,4 +12,13 @@ document.getElementById("burger").addEventListener('click', function(){
         menu.style.display = "none"
         opened = false
     }
-})
+});
+
+var menuButton = document.getElementsByClassName("menuButton")
+
+for(i = 0; i < menuButton.length; i++) {
+    menuButton[i].addEventListener('click', function(){
+        menu.style.display = "none"
+        opened = false
+    })
+}
