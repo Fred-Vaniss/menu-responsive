@@ -95,3 +95,31 @@ button:hover{
     margin-top: 75px;
     padding-top: 15px;
 }
+
+@media screen and (min-width: 630px){
+    button{
+        display: none;
+    }
+    nav{
+        display: block;
+        background: none;
+        position: unset;
+    }
+    ul{
+        text-align-last: right;
+    }
+    li{
+        display: inline-block;
+        margin: 0 10px;
+    }
+    a{
+        color:black;
+        font-size: unset;
+        width: unset;
+        padding: 0;
+    }
+
+    a:hover{
+        color: orangered;
+    }
+}
